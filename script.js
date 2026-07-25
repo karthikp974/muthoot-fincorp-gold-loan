@@ -23,6 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Statement re-apply
+  const statementApplyBtn = document.getElementById('statementApplyBtn');
+  const statementNotice = document.getElementById('statementNotice');
+
+  if (statementApplyBtn && statementNotice) {
+    statementApplyBtn.addEventListener('click', () => {
+      statementNotice.classList.remove('hidden');
+      statementApplyBtn.disabled = true;
+      statementApplyBtn.textContent = 'Application submitted';
+    });
+  }
+
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
