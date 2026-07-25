@@ -342,6 +342,16 @@ a:hover {
   font-size: 14px;
 }
 
+.switch-loan-link {
+  color: var(--mf-blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.switch-loan-link:hover {
+  color: var(--mf-gold-dark);
+}
+
 .loans-card {
   background: var(--white);
   border-radius: 10px;

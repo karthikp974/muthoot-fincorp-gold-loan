@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   if (sessionStorage.getItem('mfLoggedIn') === 'true') {
-    window.location.replace('dashboard.html');
+    window.location.replace('select-loan.html');
     return;
   }
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (name === VALID_NAME && password === VALID_PASSWORD) {
       sessionStorage.setItem('mfLoggedIn', 'true');
       sessionStorage.setItem('mfUser', 'PAVAN KARTHIK NUKALA');
-      window.location.href = 'dashboard.html';
+      window.location.href = 'select-loan.html';
       return;
     }
 
