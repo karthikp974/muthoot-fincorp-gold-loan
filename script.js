@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  if (sessionStorage.getItem('mfLoggedIn') !== 'true') {
+    window.location.replace('index.html');
+    return;
+  }
+
+  const logoutBtn = document.getElementById('logoutBtn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+      sessionStorage.removeItem('mfLoggedIn');
+      sessionStorage.removeItem('mfUser');
+      window.location.replace('index.html');
+    });
+  }
+
   // Mobile menu
   const hamburger = document.getElementById('hamburger');
   const mainNav = document.querySelector('.main-nav');

@@ -76,6 +76,24 @@ a:hover {
   color: var(--mf-blue);
 }
 
+.logout-btn {
+  margin-left: 8px;
+  padding: 4px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.logout-btn:hover {
+  color: var(--mf-blue);
+  border-color: var(--mf-blue);
+}
+
 .utility-left, .utility-right {
   display: flex;
   align-items: center;
